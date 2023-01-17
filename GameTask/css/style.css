@@ -1,0 +1,9 @@
+/* This is a css rule */
+
+body {
+    background-color: rgb(33, 76, 26);
+    border:10px solid black;
+}
+/*This is another css rule*/
+
+h1 {color: gray;}
