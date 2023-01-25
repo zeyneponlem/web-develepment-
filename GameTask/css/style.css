@@ -6,4 +6,20 @@ body {
 }
 /*This is another css rule*/
 
-h1 {color: gray;}
+h1 {color: rgb(45, 22, 150);}
+
+
+/* Navigation */
+
+nav {
+      background-color: beige;
+      padding:20px;
+
+
+
+}
+nav ul {padding-left: 0px;}
+
+nav ul li { display: inline;}
+
+/*
