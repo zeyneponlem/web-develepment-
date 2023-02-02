@@ -1,0 +1,68 @@
+*{ margin: 0px;
+padding: 0px;}
+html, body{ width: 100%;height: 100%;}
+
+body{
+   
+    background-image: radial-gradient(circle,#ffd200,#ef8def)
+    
+}
+.playing-card{
+
+background: transparent;
+width: 240px;
+height: 340px;
+display: inline-block;
+margin: 10px;
+perspective: 1000px;
+
+}
+
+.flip-card{
+
+    position: relative;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    border: 2px solid #000;
+    transition: transform  .8s;
+    transform-style: preserve-3d;
+}
+.playing-car:hover .flip-card{
+
+ transform:rotateY(-180deg);
+
+}
+.card-front,.card-back{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    background-color: rgb(175, 40, 40);
+    transform: rotateY(180deg);
+}
+.card-back{
+    background-color: #ffd200;
+
+}
+.card-front img, .card-back img{
+
+    width: 100%;
+    max-width: 1000px;
+  
+    border-radius: 20px;
+}
+.container{
+
+    width: 100px;
+    max-width: 100px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
